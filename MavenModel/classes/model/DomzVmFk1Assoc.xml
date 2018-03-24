@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="DomzVmFk1Assoc"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="ServerpoolServerMapping"
+    Cardinality="1"
+    Source="true"
+    Owner="model.ServerpoolServerMapping">
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="ServerpoolServerMapping"/>
+      <Attr Name="_foreignKey" Value="model.ServerpoolServerMapping.ServerpoolServerMappingPk"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.ServerpoolServerMapping.PoolDomzMappingId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="DomzVm"
+    Cardinality="-1"
+    Owner="model.DomzVm">
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="DomzVm"/>
+      <Attr Name="_foreignKey" Value="model.DomzVm.DomzVmFk1"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.DomzVm.PoolDomzMappingId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="DomzVmAudit"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="DOMZ_VM_AUDIT"
+  AliasName="DomzVmAudit"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="VmIdAuditAudit"
+    ColumnName="VM_ID_AUDIT_AUDIT"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="VmId"
+    ColumnName="VM_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="PoolDomzMappingId"
+    ColumnName="POOL_DOMZ_MAPPING_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="CustomerId"
+    ColumnName="CUSTOMER_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="VmName"
+    Precision="200"
+    ColumnName="VM_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="200"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="InstanceName"
+    Precision="10"
+    ColumnName="INSTANCE_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Csi"
+    Precision="12"
+    ColumnName="CSI"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="12"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Activeyn"
+    Precision="2"
+    ColumnName="ACTIVEYN"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="2"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    Precision="200"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="200"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedDate"
+    ColumnName="CREATED_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="UpdatedBy"
+    Precision="200"
+    ColumnName="UPDATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="200"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="UpdatedDate"
+    ColumnName="UPDATED_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="DOMZ_VM_AUDIT"
+    PrimaryKey="true"/>
+  <Key
+    Name="DomzvmauditPrimaryKey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="DOMZVMAUDIT_PRIMARY_KEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.DomzVmAudit.VmIdAuditAudit"/>
+      <Item Value="model.DomzVmAudit.VmId"/>
+      <Item Value="model.DomzVmAudit.PoolDomzMappingId"/>
+      <Item Value="model.DomzVmAudit.CustomerId"/>
+      <Item Value="model.DomzVmAudit.VmName"/>
+      <Item Value="model.DomzVmAudit.InstanceName"/>
+      <Item Value="model.DomzVmAudit.Csi"/>
+      <Item Value="model.DomzVmAudit.Activeyn"/>
+      <Item Value="model.DomzVmAudit.CreatedBy"/>
+      <Item Value="model.DomzVmAudit.CreatedDate"/>
+      <Item Value="model.DomzVmAudit.UpdatedBy"/>
+      <Item Value="model.DomzVmAudit.UpdatedDate"/>
+    </AttrArray>
+  </Key>
+</Entity>

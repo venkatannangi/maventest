@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true"
+  ComponentClass="model.am.AppModuleImpl"
+  DefClass="model.am.AppModuleDefImpl"
+  ComponentInterface="model.am.common.AppModule">
+  <DesignTime>
+    <Attr Name="_isDefCodegen" Value="true"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="CpacityMgmtErrorsView1"
+    ViewObjectName="model.vo.CpacityMgmtErrorsView"/>
+  <ViewUsage
+    Name="DcNgiZoneMasterView1"
+    ViewObjectName="model.vo.DcNgiZoneMasterView"/>
+  <ClientInterface
+    Name="__clientInterface">
+    <Method
+      Name="testBuild"
+      MethodName="testBuild">
+      <Return
+        Name="_return_type_"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="a"
+        Type="java.lang.String"/>
+    </Method>
+  </ClientInterface>
+</AppModule>

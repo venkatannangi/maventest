@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="DcNgiZoneMasterFk1Assoc"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="DatacenterMaster"
+    Cardinality="1"
+    Source="true"
+    Owner="model.DatacenterMaster">
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="DatacenterMaster"/>
+      <Attr Name="_foreignKey" Value="model.DatacenterMaster.DatacenterMasterPk"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.DatacenterMaster.DcId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="DcNgiZoneMaster"
+    Cardinality="-1"
+    Owner="model.DcNgiZoneMaster">
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="DcNgiZoneMaster"/>
+      <Attr Name="_foreignKey" Value="model.DcNgiZoneMaster.DcNgiZoneMasterFk1"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.DcNgiZoneMaster.DcId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

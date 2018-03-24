@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ServerpoolServerMappingFk1Assoc"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="ZoneServerpoolMapping"
+    Cardinality="1"
+    Source="true"
+    Owner="model.ZoneServerpoolMapping">
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="ZoneServerpoolMapping"/>
+      <Attr Name="_foreignKey" Value="model.ZoneServerpoolMapping.ZoneServerpoolMappingPk"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.ZoneServerpoolMapping.ZoneServerpoolMappingId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="ServerpoolServerMapping"
+    Cardinality="-1"
+    Owner="model.ServerpoolServerMapping">
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="ServerpoolServerMapping"/>
+      <Attr Name="_foreignKey" Value="model.ServerpoolServerMapping.ServerpoolServerMappingFk1"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.ServerpoolServerMapping.ZoneServerpoolMappingId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

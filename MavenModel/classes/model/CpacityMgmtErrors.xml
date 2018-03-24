@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="CpacityMgmtErrors"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="CPACITY_MGMT_ERRORS"
+  AliasName="CpacityMgmtErrors"
+  BindingStyle="OracleName"
+  RowClass="model.CpacityMgmtErrorsImpl"
+  DefClass="model.CpacityMgmtErrorsDefImpl"
+  CollClass="model.CpacityMgmtErrorsCollImpl">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Init|Delete|Access|DML|Def|Coll|VarAccess"/>
+    <Attr Name="_isCodegen" Value="true"/>
+
+  <Attribute
+    Name="Module"
+    Precision="200"
+    ColumnName="MODULE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CPACITY_MGMT_ERRORS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="200"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ErrMsg"
+    Precision="4000"
+    ColumnName="ERR_MSG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CPACITY_MGMT_ERRORS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="4000"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    Precision="200"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CPACITY_MGMT_ERRORS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="200"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedDate"
+    ColumnName="CREATED_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="CPACITY_MGMT_ERRORS"
+    PrimaryKey="true"/>
+  <Key
+    Name="CpacitymgmterrorsPrimaryKey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="CPACITYMGMTERRORS_PRIMARY_KEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.CpacityMgmtErrors.Module"/>
+      <Item Value="model.CpacityMgmtErrors.ErrMsg"/>
+      <Item Value="model.CpacityMgmtErrors.CreatedBy"/>
+      <Item Value="model.CpacityMgmtErrors.CreatedDate"/>
+    </AttrArray>
+  </Key>
+</Entity>
